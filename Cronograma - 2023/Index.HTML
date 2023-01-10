@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type=".png" href="Imagens/Icones/Icone-Calendário.png">
+    <link rel="stylesheet" href="CSS/Reset.css">
+    <link rel="stylesheet" href="CSS/Cronograma.CSS">
+    <title>Cronograma | 2023</title>
+</head>
+
+<body>
+    <section>
+        <section class="menu-superior">
+            <div class="box-menu-titulo">
+                <p class="titulo-menu">Cronograma</p>
+            </div>
+            <div class="box-menu box-menu-ativo"><a class="items-menu" href="@">Início</a></div>
+            <div class="box-menu"><a class="items-menu" href="Teste.HTML">Semana</a></div>
+            <div class="box-menu"><a class="items-menu" href="@">Meses</a></div>
+            <div class="box-menu"><a class="items-menu" href="@">Fitness</a></div>
+            <div class="box-menu"><a class="items-menu" href="@">Dados e<br>Estatísticas</a></div>
+            <script src="JS/Cronograma.JS"></script>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#a06cd5" fill-opacity="1"
+                d="M0,128L60,117.3C120,107,240,85,360,90.7C480,96,600,128,720,122.7C840,117,960,75,1080,74.7C1200,75,1320,117,1380,138.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg>
+    </section>
+    <section>
+        <div class="box-titulo">
+            <h1 class="titulo-principal">Cronograma 2023</h1>
+        </div>
+    </section>
+    <section class="data-container">
+        <div class="box-data">
+            <h2 class="titulo-data">09 de Janeiro - 15 de Janeiro</h2>
+        </div>
+    </section>
+    <svg class="ondas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a06cd5" fill-opacity="1"
+            d="M0,224L24,213.3C48,203,96,181,144,165.3C192,149,240,139,288,160C336,181,384,235,432,261.3C480,288,528,288,576,256C624,224,672,160,720,128C768,96,816,96,864,122.7C912,149,960,203,1008,213.3C1056,224,1104,192,1152,186.7C1200,181,1248,203,1296,197.3C1344,192,1392,160,1416,144L1440,128L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z">
+        </path>
+    </svg>
+    <div class="box-alura">
+        <h2 class="titulo-alura" onclick="desativarAlura()">Alura: HTML e CSS - JavaScript</h2>
+        <div class="img-alura" id="botaoAlura" onclick="ativarAlura(); exibir()">
+            <button class="texto-alura">Alura</button>
+        </div>
+    </div>
+    <svg class="ondas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a06cd5" fill-opacity="1"
+            d="M0,224L24,213.3C48,203,96,181,144,165.3C192,149,240,139,288,160C336,181,384,235,432,261.3C480,288,528,288,576,256C624,224,672,160,720,128C768,96,816,96,864,122.7C912,149,960,203,1008,213.3C1056,224,1104,192,1152,186.7C1200,181,1248,203,1296,197.3C1344,192,1392,160,1416,144L1440,128L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z">
+        </path>
+    </svg>
+    <div id="imprimirAlura" class="imprimirAlura"></div>
+    <svg class="ondas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a06cd5" fill-opacity="1" d="M0,32L30,64C60,96,120,160,180,202.7C240,245,300,267,360,277.3C420,288,480,288,540,266.7C600,245,660,203,720,192C780,181,840,203,900,176C960,149,1020,75,1080,48C1140,21,1200,43,1260,48C1320,53,1380,43,1410,37.3L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+      </svg>  
+    <div class="box-atividadesTech">
+        <h2 class="titulo-atividadesTech" onclick="desativarAtividadesTech()">Atividade Tech: Páginas WEB</h2>
+        <div class="img-atividadesTech" id="botaoAtividadesTech" onclick="ativarAtividadesTech(); exibirAT()">
+            <button class="texto-atividadesTech">Atividade<br>Tech</button>
+        </div>
+    </div>
+    <svg class="ondas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a06cd5" fill-opacity="1" d="M0,32L30,64C60,96,120,160,180,202.7C240,245,300,267,360,277.3C420,288,480,288,540,266.7C600,245,660,203,720,192C780,181,840,203,900,176C960,149,1020,75,1080,48C1140,21,1200,43,1260,48C1320,53,1380,43,1410,37.3L1440,32L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+      </svg> 
+    <div id="imprimirAtividadesTech" class="imprimirAtividadesTech"></div>
+    <svg class="ondas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a06cd5" fill-opacity="1"
+            d="M0,64L26.7,96C53.3,128,107,192,160,224C213.3,256,267,256,320,240C373.3,224,427,192,480,186.7C533.3,181,587,203,640,192C693.3,181,747,139,800,112C853.3,85,907,75,960,85.3C1013.3,96,1067,128,1120,138.7C1173.3,149,1227,139,1280,133.3C1333.3,128,1387,128,1413,128L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+        </path>
+    </svg>
+    <div class="box-atividadesFisicas">
+        <h2 class="titulo-atividadesFisicas" onclick="desativarAtividadesFisicas()">Atividades Fisícas: Bicicleta -
+            Caminhada - Exposição ao Sol</h2>
+        <div class="img-atividadesFisicas" id="botaoAlura" onclick="ativarAtividadesFisicas(); exibirAF()">
+            <button class="texto-atividadesFisicas">Atividades Fisícas</button>
+        </div>
+    </div>
+    <svg class="ondas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a06cd5" fill-opacity="1"
+            d="M0,64L26.7,96C53.3,128,107,192,160,224C213.3,256,267,256,320,240C373.3,224,427,192,480,186.7C533.3,181,587,203,640,192C693.3,181,747,139,800,112C853.3,85,907,75,960,85.3C1013.3,96,1067,128,1120,138.7C1173.3,149,1227,139,1280,133.3C1333.3,128,1387,128,1413,128L1440,128L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+        </path>
+    </svg>
+    <div id="imprimirAtividadesFisicas" class="imprimirAtividadesFisicas"></div>
+    <svg class="ondas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a06cd5" fill-opacity="1"
+            d="M0,96L30,128C60,160,120,224,180,250.7C240,277,300,267,360,250.7C420,235,480,213,540,192C600,171,660,149,720,117.3C780,85,840,43,900,69.3C960,96,1020,192,1080,197.3C1140,203,1200,117,1260,106.7C1320,96,1380,160,1410,192L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+        </path>
+    </svg>
+    <div class="box-saude">
+        <h2 class="titulo-saude" onclick="desativarSaude()">Saúde: Exposição ao Sol - Alimentção</h2>
+        <div class="img-saude" id="botaoAlura" onclick="ativarSaude(); exibirSA()">
+            <button class="texto-saude">Saúde</button>
+        </div>
+    </div>
+    <svg class="ondas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a06cd5" fill-opacity="1"
+            d="M0,96L30,128C60,160,120,224,180,250.7C240,277,300,267,360,250.7C420,235,480,213,540,192C600,171,660,149,720,117.3C780,85,840,43,900,69.3C960,96,1020,192,1080,197.3C1140,203,1200,117,1260,106.7C1320,96,1380,160,1410,192L1440,224L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+        </path>
+    </svg>
+    <div id="imprimirSaude" class="imprimirAtividadesFisicas"></div>
+    <svg class='ondas' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a06cd5" fill-opacity="1" d="M0,0L24,37.3C48,75,96,149,144,186.7C192,224,240,224,288,224C336,224,384,224,432,202.7C480,181,528,139,576,112C624,85,672,75,720,101.3C768,128,816,192,864,218.7C912,245,960,235,1008,213.3C1056,192,1104,160,1152,138.7C1200,117,1248,107,1296,133.3C1344,160,1392,224,1416,256L1440,288L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
+      </svg>      
+    <div class="box-estudos">
+        <h2 class="titulo-estudos" onclick="desativarEstudos()">Estudos: Alemão - Geografia</h2>
+        <div class="img-estudos" id="botaoAlura" onclick="ativarEstudos(); exibirES()">
+            <button class="texto-estudos">Estudos</button>
+        </div>
+    </div>
+    <svg class='ondas' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a06cd5" fill-opacity="1" d="M0,0L24,37.3C48,75,96,149,144,186.7C192,224,240,224,288,224C336,224,384,224,432,202.7C480,181,528,139,576,112C624,85,672,75,720,101.3C768,128,816,192,864,218.7C912,245,960,235,1008,213.3C1056,192,1104,160,1152,138.7C1200,117,1248,107,1296,133.3C1344,160,1392,224,1416,256L1440,288L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path>
+      </svg>
+    <div id="imprimirEstudos" class="imprimirAtividadesFisicas"></div>
+    <svg class="ondas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a06cd5" fill-opacity="1" d="M0,128L24,128C48,128,96,128,144,117.3C192,107,240,85,288,96C336,107,384,149,432,170.7C480,192,528,192,576,208C624,224,672,256,720,240C768,224,816,160,864,138.7C912,117,960,139,1008,144C1056,149,1104,139,1152,122.7C1200,107,1248,85,1296,64C1344,43,1392,21,1416,10.7L1440,0L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
+      </svg>            
+    <div class="box-organizacao">
+        <h2 class="titulo-organizacao" onclick="desativarOrganizacao()">Organização: Jardinagem - Quarto - Cozinha</h2>
+        <div class="img-organizacao" id="botaoAlura" onclick="ativarOrganizacao(); exibirOR()">
+            <button class="texto-organizacao">Organização</button>
+        </div>
+    </div>
+    <svg class="ondas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a06cd5" fill-opacity="1" d="M0,128L24,128C48,128,96,128,144,117.3C192,107,240,85,288,96C336,107,384,149,432,170.7C480,192,528,192,576,208C624,224,672,256,720,240C768,224,816,160,864,138.7C912,117,960,139,1008,144C1056,149,1104,139,1152,122.7C1200,107,1248,85,1296,64C1344,43,1392,21,1416,10.7L1440,0L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path>
+      </svg>      
+    <div id="imprimirOrganizacao" class="imprimirAtividadesFisicas"></div>
+</body>
+</html>
